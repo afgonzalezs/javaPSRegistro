@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "476e2c32-ece7-4856-9673-609eaf81d09b",
+		"name": "javaPS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25672171"
+	},
+	"item": [
+		{
+			"name": "Consultar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1000,\r\n    \"identificacion\": null,\r\n    \"nombres\": null,\r\n    \"apellidos\": null,\r\n    \"fechaNacimiento\": null,\r\n    \"telefono\": null,\r\n    \"correo\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/persona",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1000,\r\n    \"identificacion\": null,\r\n    \"nombres\": null,\r\n    \"apellidos\": null,\r\n    \"fechaNacimiento\": null,\r\n    \"telefono\": null,\r\n    \"correo\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/persona/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persona",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
