@@ -15,3 +15,4 @@ CREATE TABLE Registro
     registro  DATE NOT NULL,
     persona_id INT  NOT NULL REFERENCES Persona (id)
 );
+
